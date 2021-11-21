@@ -47,9 +47,12 @@ const quickLinks = [
     </p>
 
     <h2 class="text-xl">Play with the Counter after your tests finish</h2>
+
+    <!-- Use a selector like data-testid to access the counter
+    and call `.click()` from within the test.-->
     <button
-      class="px-2 py-1 mx-auto rounded hover:ring-1 focus:ring-1 border-1 focus:outline-none w-120px"
       data-testid="counter"
+      class="px-2 py-1 mx-auto rounded hover:ring-1 focus:ring-1 border-1 focus:outline-none w-120px"
       type="button"
       @click="count++"
     >count is: {{ count }}</button>
