@@ -8,6 +8,10 @@ const textSelector = '[data-testid=message]'
 const msg = 'Welcome to Stress-free Testing with Vue 3!'
 
 describe('<HelloWorld />', () => {
+  before(() => {
+    cy.viewport(800, 500)
+  })
+
   it('renders', () => {
     // The first argument is the component to be mounted.
     // The second argument is optional and is used for passing in props,
