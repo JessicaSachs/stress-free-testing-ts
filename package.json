@@ -45,6 +45,7 @@
         "@testing-library/cypress/add-commands",
         "faker",
         "vue",
+        "vue-router",
         "vue-star-rating"
       ]
     }

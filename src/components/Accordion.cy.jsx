@@ -18,8 +18,17 @@ describe('<Accordion />', () => {
         <Accordion vSlots={slots}></Accordion>
       </div>
     ))
-
-    // Use the header selectors and content selectors to interact
-    // with the accordion and test that it correctly expands and collapses.
+      // Use the header selectors and content selectors to interact
+      // with the accordion and test that it correctly expands and collapses.
+      .get(contentSelector)
+      .should('not.exist')
+      .get(headerSelector)
+      .click()
+      .get(contentSelector)
+      .should('be.visible')
+      .get(headerSelector)
+      .click()
+      .get(contentSelector)
+      .should('not.exist')
   })
 })
