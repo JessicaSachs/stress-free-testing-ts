@@ -3,7 +3,6 @@ import HelloWorld from './HelloWorld.vue'
 
 // Reusable Selectors
 const textSelector = '[data-testid=message]'
-const counterSelector = '[data-testid=counter]'
 
 // Constants
 const msg = 'Welcome to Stress-free Testing with Vue 3!'
@@ -18,15 +17,6 @@ describe('<HelloWorld />', () => {
     mount(HelloWorld, { props: { msg } })
       .get(textSelector)
       .should('contain.text', msg)
-  })
-
-  it('has a counter', () => {
-    mount(HelloWorld, { props: { msg } })
-      .get(counterSelector)
-      .should('have.text', 'count is: 0')
-      .click()
-      .should('have.text', 'count is: 1')
-      .should('have.focus')
   })
 })
 

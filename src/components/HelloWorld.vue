@@ -1,11 +1,9 @@
 <script setup>
-import { ref } from 'vue'
+import Stepper from './Stepper.vue'
 
 defineProps({
   msg: String
 })
-
-const count = ref(0)
 
 const quickLinks = [
   { text: 'Vue Test Utils API for Vue 3', href: 'https://next.vue-test-utils.vuejs.org/api/' },
@@ -33,7 +31,7 @@ const quickLinks = [
       >Stress Free Testing (Typescript!)</a>.
     </p>
 
-    <p class="pb-4">
+    <p class="py-4">
       <b>🔗 Quick Links:</b>
       <span>
         <a
@@ -46,16 +44,12 @@ const quickLinks = [
       </span>
     </p>
 
-    <h2 class="text-xl">Play with the Counter after your tests finish</h2>
+    <h2 class="text-xl">Play with the Stepper after your tests finish</h2>
 
     <!-- Use a selector like data-testid to access the counter
     and call `.click()` from within the test.-->
-    <button
-      data-testid="counter"
-      class="px-2 py-1 mx-auto rounded hover:ring-1 focus:ring-1 border-1 focus:outline-none w-120px"
-      type="button"
-      @click="count++"
-    >count is: {{ count }}</button>
+    <Stepper></Stepper>
+
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test live reload.
