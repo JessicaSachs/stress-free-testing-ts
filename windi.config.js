@@ -12,4 +12,5 @@ export default defineConfig({
       mono: ['Fira Code', 'monospace'],
     },
   },
+  plugins: [require('@windicss/plugin-interaction-variants')],
 })
