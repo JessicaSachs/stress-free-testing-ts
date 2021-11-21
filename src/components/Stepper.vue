@@ -1,7 +1,29 @@
 <script setup>
 import { ref } from 'vue'
 
-const counter = ref(0)
+const props = defineProps({
+  min: {
+    type: Number,
+    default: 0
+  },
+  max: {
+    type: Number,
+    default: 5
+  }
+})
+
+const counter = ref(props.min)
+
+const decrement = () => {
+  // Do not go below the minimum)
+  if (counter.value <= props.min) return
+  counter.value = counter.value - 1
+}
+
+const increment = () => {
+  if (counter.value >= props.max) return
+  counter.value = counter.value + 1
+}
 </script>
 
 <template>
@@ -9,11 +31,11 @@ const counter = ref(0)
     data-testid="counter"
     class="mx-auto rounded counter hover:ring-1 focus:ring-1 border-1 focus:outline-none w-120px font-16px"
   >
-    <button data-testid="decrement" @click="counter--">
+    <button data-testid="decrement" @click="decrement">
       <i-mdi-minus-circle />
     </button>
     <span>{{ counter }}</span>
-    <button data-testid="increment" @click="counter++">
+    <button data-testid="increment" @click="increment">
       <i-mdi-plus-circle />
     </button>
   </div>

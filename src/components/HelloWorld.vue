@@ -58,4 +58,7 @@ const quickLinks = [
 </template>
 
 <style scoped lang="scss">
+a {
+  @apply text-green-500 focus:underline focus:underline-current focus:outline-none hover:underline hover:underline-current visited:text-indigo-500 cursor-pointer;
+}
 </style>
