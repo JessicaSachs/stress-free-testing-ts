@@ -1,7 +1,8 @@
-import { mount as realMount } from '@cypress/vue'
+// Cypress Testing Library - https://testing-library.com/docs/cypress-testing-library/intro/
+import '@testing-library/cypress/add-commands'
 
-// Global setup and application setup usually done in src/main.js *must*
-// also be done within your test environment
-Cypress.Commands.add('mount', (component, options = {}) => {
-  return realMount(component, options)
-})
+// The Cypress support.js file is loaded *once per spec* and contains global setup and teardown.
+
+// *Workshop Task*: Fix the application's styles.
+// 1. Import main.scss here.
+// 2. Look inside of src/main.js and import any other global styles.
