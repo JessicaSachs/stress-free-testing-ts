@@ -34,5 +34,17 @@ describe('<Tabs />', () => {
 
     cy.findByText(items[1].text).click().should('have.focus')
     cy.get('@selectSpy').should('have.been.calledWith', items[1])
+
+    cy.findByText(items[2].text).click().should('have.focus')
+    cy.get('@selectSpy').should('have.been.calledWith', items[2])
+
+    cy.findByText(items[1].text).type(' ').should('have.focus')
+    cy.get('@selectSpy').should('have.been.calledWith', items[1])
+
+    cy.findByText(items[0].text).type('{enter}').should('have.focus')
+    cy.get('@selectSpy').should('have.been.calledWith', items[0])
+
+    cy.get('body').click()
+    cy.findByText(items[1].text).should('not.have.focus')
   })
 })
