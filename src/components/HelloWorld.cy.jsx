@@ -15,8 +15,7 @@ describe('<HelloWorld />', () => {
     // found in the Vue Test Utils docs.
 
     mount(HelloWorld, { props: { msg } })
-      .get(textSelector)
-      .should('contain.text', msg)
+    cy.get(textSelector).should('contain.text', msg)
   })
 })
 
@@ -25,6 +24,5 @@ it.skip('JSX syntax example', () => {
   // on when we begin to use wrapper components to test slots and CSS.
 
   mount(<HelloWorld msg={msg} />)
-    .get(textSelector)
-    .should('contain.text', msg)
+  cy.get(textSelector).should('contain.text', msg)
 })

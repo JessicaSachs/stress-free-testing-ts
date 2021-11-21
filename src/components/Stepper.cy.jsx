@@ -1,10 +1,17 @@
+import { mount } from '@cypress/vue'
+import Stepper from './Stepper.vue'
+
+const textSelector = '[data-testid=counter]'
+const incrementSelector = '[data-testid=increment]'
+const decrementSelector = '[data-testid=decrement]'
+
 describe('<Stepper />', () => {
   it('renders', () => {
-    // The first argument is the component to be mounted.
-    // The second argument is optional and is used for passing in props,
-    // plugins, etc. The complete documentation for this signature can be
-    // found in the Vue Test Utils docs.
-
-    mount(Stepper).get(textSelector).should('contain.text', msg)
+    mount(Stepper)
+    cy.get(textSelector).should('contain.text', '0')
+    cy.get(incrementSelector).click()
+    cy.get(textSelector).should('contain.text', '1')
+    cy.get(decrementSelector).click().click()
+    cy.get(textSelector).should('contain.text', '-1')
   })
 })
