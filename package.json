@@ -1,0 +1,46 @@
+{
+  "name": "stress-free-testing",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "dev:component": "cypress open-ct",
+    "test:component": "cypress run-ct"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.4.2",
+    "pinia": "^2.0.4",
+    "vue": "^3.2.16",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@cypress/vite-dev-server": "^2.2.1",
+    "@cypress/vue": "^3.0.5",
+    "@iconify/json": "^1.1.431",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vitejs/plugin-vue-jsx": "^1.2.0",
+    "cypress": "^9.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^8.1.1",
+    "faker": "^5.5.3",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.4",
+    "unplugin-icons": "^0.12.18",
+    "unplugin-vue-components": "^0.17.2",
+    "vite": "^2.6.4",
+    "vite-plugin-optimize-persist": "^0.1.0",
+    "vite-plugin-package-config": "^0.0.3",
+    "vite-plugin-windicss": "^1.5.1",
+    "windicss": "^3.2.1"
+  },
+  "vite": {
+    "optimizeDeps": {
+      "include": [
+        "@cypress/vue",
+        "vue"
+      ]
+    }
+  }
+}

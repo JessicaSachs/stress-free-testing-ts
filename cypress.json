@@ -1,0 +1,15 @@
+{
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "e2e": {
+    "testFiles": "**/*.cy.*",
+    "integrationFolder": "cypress/e2e",
+    "supportFile": "cypress/e2e/support.js"
+  },
+  "component": {
+    "pluginsFile": "cypress/component/plugins.js",
+    "testFiles": "**/*.cy.*",
+    "componentFolder": "src",
+    "supportFile": "cypress/component/support.js",
+    "video": false
+  }
+}
