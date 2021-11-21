@@ -28,12 +28,25 @@ describe('<ProductCard />', () => {
     )
   })
 
-  it.skip('renders a description', () => {
-    // You can either try out Testing Library (I suggest cy.findByText)
-    // Or, you can add data-testid selectors inside of the ProductCard.
+  it('renders a description', () => {
+    cy.findByText(description).should('be.visible')
   })
 
-  it.skip('...', () => {
-    // What other features does this ProductCard have?
+  it('renders the price', () => {
+    cy.findByText(price).should('be.visible')
+  })
+
+  it('renders the image', () => {
+    cy.findByAltText(img.alt)
+      .should('be.visible')
+      .and('have.attr', 'src', img.src)
+  })
+
+  it('renders the rating', () => {
+    cy.findByText(rating).should('be.visible')
+  })
+
+  it('renders any additional text', () => {
+    cy.findByText(additional).should('be.visible')
   })
 })

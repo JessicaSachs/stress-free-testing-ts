@@ -42,6 +42,7 @@
       "include": [
         "@cypress/vue",
         "@testing-library/cypress/add-commands",
+        "faker",
         "vue",
         "vue-star-rating"
       ]
