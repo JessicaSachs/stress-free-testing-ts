@@ -1,12 +1,12 @@
 import faker from 'faker'
 
-export const products = Array.from(Array(120).keys()).map(() => {
+export const products = Array.from(Array(16).keys()).map(() => {
   const productName = faker.commerce.productName()
   const bids = faker.datatype.number({ min: 1, max: 2000 })
   const watchers = faker.datatype.number({ min: 128, max: 6400 })
 
   return {
-    id: faker.datatype.uuid(),
+    id: faker.datatype.uuid().slice(0, 6),
     img: {
       src:
         'https://loremflickr.com/240/240/food,coffee?lock=' +

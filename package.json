@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"node src/server.mjs\"",
     "build": "vite build",
     "dev:component": "cypress open-ct",
     "test:component": "cypress run-ct"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.4.2",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
     "pinia": "^2.0.4",
     "vue": "^3.2.16",
     "vue-router": "4",
@@ -23,10 +24,12 @@
     "@vitejs/plugin-vue": "^1.9.3",
     "@vitejs/plugin-vue-jsx": "^1.2.0",
     "@windicss/plugin-interaction-variants": "^1.0.0",
+    "concurrently": "^6.4.0",
     "cypress": "^9.0.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^8.1.1",
+    "express": "^4.17.1",
     "faker": "^5.5.3",
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
@@ -43,7 +46,9 @@
       "include": [
         "@cypress/vue",
         "@testing-library/cypress/add-commands",
+        "axios",
         "faker",
+        "pinia",
         "vue",
         "vue-router",
         "vue-star-rating"

@@ -10,12 +10,12 @@ html {
   font-size: 16px;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.15s ease;
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 200ms;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.fade-leave-to,
+.fade-enter-from {
   opacity: 0;
 }

@@ -6,8 +6,8 @@ const routes = computed(() => getRoutes())
 </script>
 
 <template>
-  <div class="w-screen h-screen overflow-auto children:p-4">
-    <header class="w-full border-b-1">
+  <div class="relative w-screen h-screen overflow-auto children:p-4">
+    <header class="w-full">
       <nav class="inline-flex gap-2">
         <router-link
           :to="route.path"
@@ -25,10 +25,10 @@ const routes = computed(() => getRoutes())
         </router-link>
       </nav>
     </header>
-    <main class="h-screen overflow-auto bg-white">
+    <main class="absolute w-full h-screen overflow-auto bg-white top-60px">
       <router-view v-slot="{ Component }">
         <keep-alive>
-          <transition name="fade" mode="in-out">
+          <transition name="fade" mode="out-in">
             <component :is="Component" />
           </transition>
         </keep-alive>
