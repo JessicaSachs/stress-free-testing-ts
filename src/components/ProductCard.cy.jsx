@@ -28,6 +28,8 @@ describe('<ProductCard />', () => {
     )
   })
 
+  it.only('mounts', () => {})
+
   it.skip('renders a description', () => {
     // You can either try out Testing Library (I suggest cy.findByText)
     // Or, you can add data-testid selectors inside of the ProductCard.
