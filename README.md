@@ -1,6 +1,6 @@
 <h1 align="center">Stress-free Testing with Vue 3, Cypress, and Vite</h1>
 
-<p align="center">A pre-conference workshop for [Vue Toronto 2021][vue toronto].</p>
+<p align="center">A pre-conference workshop for Vue Toronto 2021</p>
 
 **🔗 Quick Links:** [Vue Test Utils API for Vue 3][vtu docs], [Lachlan Miller's Vue Testing Handbook][lachlans handbook], [Interacting with Elements using Cy Commands][cypress events], [Cypress API][cypress api], [Chai Matchers][cypress chai matchers]
 
@@ -41,7 +41,7 @@ The accompanying repository for the "Stress-free Testing with Vue 3 and Vite" wo
 ## App Downloads
 
 - 📋 Miro is where the majority of the workshop will be held ([Desktop App Preferred][miro app downloads], [Workshop Board](https://miro.com/app/board/o9J_lhsag48=/?invite_link_id=974389854516)).
-- 👩‍🎨 Figma contains the mocks for our App ([Desktop App][figma_downloads], [Mockups](https://www.figma.com/file/fvZhzUaVkQl3YoSquYlpL3/%F0%9F%9B%92-Ecommerce-Shopping-Template-(Community)?node-id=1%3A2559)).
+- 👩‍🎨 Figma contains the mocks for our App ([Desktop App][figma app downloads], [Mockups](https://www.figma.com/file/fvZhzUaVkQl3YoSquYlpL3/%F0%9F%9B%92-Ecommerce-Shopping-Template-(Community)?node-id=1%3A2559)).
 
 ## Tooling
 
@@ -76,7 +76,6 @@ Please use VSCode with Recommended Extensions for the best Developer Experience.
 [cypress chai matchers]: https://docs.cypress.io/guides/references/assertions#Chai
 [cypress events]: https://docs.cypress.io/guides/core-concepts/interacting-with-elements#Actionability
 [lachlans handbook]: https://lmiller1990.github.io/vue-testing-handbook/
-[vue toronto]: https://www.vuetoronto.com/
 [pinia]: https://pinia.esm.dev/
 [vue router v4]: https://next.router.vuejs.org/
 [faker docs]: https://fakerjsdocs.netlify.app/
