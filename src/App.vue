@@ -10,8 +10,8 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style lang="scss" scoped>
-#app {
-  text-align: center;
-  margin-top: 60px;
+img {
+  margin: 0 auto;
+  padding-top: 60px;
 }
 </style>
