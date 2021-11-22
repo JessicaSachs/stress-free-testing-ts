@@ -26,11 +26,13 @@ const routes = computed(() => getRoutes())
       </nav>
     </header>
     <main class="h-screen overflow-auto bg-white">
-      <transition name="fade" mode="in-out">
+      <router-view v-slot="{ Component }">
         <keep-alive>
-          <router-view />
+          <transition name="fade" mode="in-out">
+            <component :is="Component" />
+          </transition>
         </keep-alive>
-      </transition>
+      </router-view>
     </main>
   </div>
 </template>
