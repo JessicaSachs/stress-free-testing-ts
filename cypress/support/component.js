@@ -3,8 +3,6 @@ import '@testing-library/cypress/add-commands'
 
 // The Cypress support.js file is loaded *once per spec* and contains global setup and teardown.
 
-// *Workshop Task*: Fix the application's styles.
-
 // 1. Look inside of src/main.js and import any other global styles.
 import 'virtual:windi.css'
 import 'virtual:windi-devtools'
@@ -13,7 +11,7 @@ import 'virtual:windi-devtools'
 import '../../src/main.scss'
 
 // 3. Import the real mount function and wrap it.
-import { mount as realMount } from '@cypress/vue'
+import { mount as realMount } from 'cypress/vue'
 
 // 4. Import any global plugins like Vue Router or Pinia or Vuex
 import { createRouter } from '../../src/router'

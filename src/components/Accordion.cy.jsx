@@ -1,4 +1,3 @@
-import { mount } from '@cypress/vue'
 import Accordion from './Accordion.vue'
 
 const headerSelector = '[data-testid=header]'
@@ -11,7 +10,7 @@ describe('<Accordion />', () => {
       target: () => <h1 data-testid="header">Header</h1>,
     }
 
-    mount(() => (
+    cy.mount(() => (
       <div class="p-12">
         <h1 class="text-lg">Accordion Examples</h1>
         <h1 class="pb-8">Click on the header to toggle the card</h1>
