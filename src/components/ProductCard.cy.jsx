@@ -1,4 +1,3 @@
-import { mount } from '@cypress/vue'
 import ProductCard from './ProductCard.vue'
 
 // A Vite-specific parameter to resolve the url of your image.
@@ -16,7 +15,7 @@ const rating = 4.67
 
 describe('<ProductCard />', () => {
   beforeEach(() => {
-    mount(
+    cy.mount(
       <ProductCard
         class="m-2"
         img={img}

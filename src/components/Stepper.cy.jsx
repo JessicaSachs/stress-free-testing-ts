@@ -1,4 +1,3 @@
-import { mount } from '@cypress/vue'
 import Stepper from './Stepper.vue'
 
 const textSelector = '[data-testid=counter]'
@@ -7,7 +6,7 @@ const decrementSelector = '[data-testid=decrement]'
 
 describe('<Stepper />', () => {
   it('renders', () => {
-    mount(<Stepper />)
+    cy.mount(<Stepper />)
     cy.get(textSelector).should('contain.text', '0')
     cy.get(incrementSelector).click()
     cy.get(textSelector).should('contain.text', '1')
@@ -17,14 +16,14 @@ describe('<Stepper />', () => {
 
   describe('min', () => {
     it('has a default of 0 for the min prop', () => {
-      mount(<Stepper />)
+      cy.mount(<Stepper />)
       cy.get(textSelector).should('contain.text', '0').click()
       cy.get(decrementSelector).click()
       cy.get(textSelector).should('contain.text', '0')
     })
 
     it('is initially set to the min prop', () => {
-      mount(<Stepper min={20} />)
+      cy.mount(<Stepper min={20} />)
       cy.get(textSelector).should('contain.text', '20').click()
       cy.get(decrementSelector).click()
       cy.get(textSelector).should('contain.text', '20')
