@@ -2,8 +2,7 @@
 
 <p align="center">A pre-conference workshop for VueConf US 2022</p>
 
-**🔗 Quick Links:** [Vue Test Utils API for Vue 3][vtu docs], [Lachlan Miller's Vue Testing Handbook][lachlans handbook], [Interacting with Elements using Cy Commands][cypress events], [Cypress API][cypress api], [Chai Matchers][cypress chai matchers]
-
+**🔗 Quick Links:** [Official Cypress Docs][cypress ct docs], [Vue Test Utils API for Vue 3][vtu docs], [Lachlan Miller's Vue Testing Handbook][lachlans handbook], [Interacting with Elements using Cy Commands][cypress events], [Cypress API][cypress api], [Chai Matchers][cypress chai matchers]
 
 ## Get Ready for the Day
 
@@ -14,6 +13,10 @@ Good morning! Either before or at the beginning of the workshop, make sure to se
     ```sh
     gh repo clone JessicaSachs/stress-free-testing # Github CLI
     ```
+3. Or the [Stress Free Testing TypeScript Repo][typescript repo]
+    ```sh
+    gh repo clone JessicaSachs/stress-free-testing-ts
+    ```
 
 3. Run `yarn install`.
 4. Download the recommended Desktop Apps ([Miro][miro app downloads] + [Figma][figma app downloads]).
@@ -21,7 +24,7 @@ Good morning! Either before or at the beginning of the workshop, make sure to se
 6. Sign up for Miro and open the board.
 7. Open the Figma File and look through the mocks.
 
-## Github Repositories
+## Branches
 
 The accompanying repository for the "Stress-free Testing with Vue 3 and Vite" workshop is located at [Stress Free Testing][javascript repo]. All parts of this workshop will be completed in this repo. If you get lost or need to reset your workspace to a known good state, you may refer to the map of branches below.
 
@@ -41,7 +44,7 @@ The accompanying repository for the "Stress-free Testing with Vue 3 and Vite" wo
 ## App Downloads
 
 - 📋 Miro is where the majority of the workshop will be held ([Desktop App Preferred][miro app downloads], [Workshop Board](https://miro.com/app/board/o9J_lhsag48=/?invite_link_id=974389854516)).
-- 👩‍🎨 Figma contains the mocks for our App ([Desktop App][figma app downloads], [Mockups](https://www.figma.com/file/fvZhzUaVkQl3YoSquYlpL3/%F0%9F%9B%92-Ecommerce-Shopping-Template-(Community)?node-id=1%3A2559)).
+- 👩‍🎨 Figma contains the mocks for our App ([Desktop App][figma_downloads], [Mockups](https://www.figma.com/file/fvZhzUaVkQl3YoSquYlpL3/%F0%9F%9B%92-Ecommerce-Shopping-Template-(Community)?node-id=1%3A2559)).
 
 ## Tooling
 
@@ -67,18 +70,20 @@ Please use VSCode with Recommended Extensions for the best Developer Experience.
 - Antfu's Iconify Visualizer to preview icons in your templates and script tags.
 - ESLint with Prettier for formatting.
 
+[cypress ct docs]: https://on.cypress.io/component
 [windi css]: https://windicss.org
 [miro app downloads]: https://miro.com/apps/
 [figma app downloads]: https://www.figma.com/downloads/
 [javascript repo]: https://github.com/JessicaSachs/stress-free-testing
+[typescript repo]: https://github.com/JessicaSachs/stress-free-testing-ts
 [nvm install]: https://github.com/nvm-sh/nvm#installing-and-updating
-[yarn install]: https://yarnpkg.com/
+[yarn install]: https://yarnpkg.com
 [cypress chai matchers]: https://docs.cypress.io/guides/references/assertions#Chai
 [cypress events]: https://docs.cypress.io/guides/core-concepts/interacting-with-elements#Actionability
 [lachlans handbook]: https://lmiller1990.github.io/vue-testing-handbook/
 [pinia]: https://pinia.esm.dev/
 [vue router v4]: https://next.router.vuejs.org/
-[faker docs]: https://fakerjs.dev
+[faker docs]: https://fakerjs.dev/
 [cypress api]: https://docs.cypress.io/api/table-of-contents
-[vtu docs]: https://next.vue-test-utils.vuejs.org/api/
+[vtu docs]: https://next.vue-test-utils.vuejs.org/api
 [script setup]: https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
