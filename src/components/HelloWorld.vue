@@ -8,6 +8,7 @@ defineProps({
 const count = ref(0)
 
 const quickLinks = [
+  { text: 'Official Cypress Component Testing Docs', href: 'https://on.cypress.io/component'},
   { text: 'Vue Test Utils API for Vue 3', href: 'https://next.vue-test-utils.vuejs.org/api/' },
   { text: `Lachlan Miller's Vue Testing Handbook`, href: 'https://lmiller1990.github.io/vue-testing-handbook/' },
   { text: 'Interacting with Elements using Cy Commands', href: 'https://docs.cypress.io/guides/core-concepts/interacting-with-elements#Actionability' },
@@ -22,13 +23,13 @@ const quickLinks = [
 
     <p>
       A pre-conference workshop for
-      <a href target="_blank">Vue Toronto 2021</a>.
+      <a href target="_blank">VueConf US 2022</a>.
     </p>
 
     <p>
-      A version of this repository written in Typescript is available:
+      A version of this repository written in TypeScript is available:
       <a
-        href
+        href="https://github.com/JessicaSachs/stress-free-testing-ts"
         target="_blank"
       >Stress Free Testing (Typescript!)</a>.
     </p>
