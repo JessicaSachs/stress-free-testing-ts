@@ -78,7 +78,7 @@ Please use VSCode with Recommended Extensions for the best Developer Experience.
 [lachlans handbook]: https://lmiller1990.github.io/vue-testing-handbook/
 [pinia]: https://pinia.esm.dev/
 [vue router v4]: https://next.router.vuejs.org/
-[faker docs]: https://fakerjsdocs.netlify.app/
+[faker docs]: https://fakerjs.dev
 [cypress api]: https://docs.cypress.io/api/table-of-contents
 [vtu docs]: https://next.vue-test-utils.vuejs.org/api/
 [script setup]: https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
