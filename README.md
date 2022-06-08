@@ -1,6 +1,6 @@
 <h1 align="center">Stress-free Testing with Vue 3, Cypress, and Vite</h1>
 
-<p align="center">A pre-conference workshop for Vue Toronto 2021</p>
+<p align="center">A pre-conference workshop for VueConf US 2022</p>
 
 **🔗 Quick Links:** [Vue Test Utils API for Vue 3][vtu docs], [Lachlan Miller's Vue Testing Handbook][lachlans handbook], [Interacting with Elements using Cy Commands][cypress events], [Cypress API][cypress api], [Chai Matchers][cypress chai matchers]
 
