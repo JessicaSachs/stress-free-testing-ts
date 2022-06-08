@@ -1,4 +1,3 @@
-import { mount } from '@cypress/vue'
 import HelloWorld from './HelloWorld.vue'
 
 // Reusable Selectors
@@ -14,7 +13,7 @@ describe('<HelloWorld />', () => {
     // plugins, etc. The complete documentation for this signature can be
     // found in the Vue Test Utils docs.
 
-    mount(HelloWorld, { props: { msg } })
+    cy.mount(HelloWorld, { props: { msg } })
     cy.get(textSelector).should('contain.text', msg)
   })
 })
@@ -23,6 +22,6 @@ it.skip('JSX syntax example', () => {
   // The JSX Syntax for Vue is less documented, however it will be very useful later
   // on when we begin to use wrapper components to test slots and CSS.
 
-  mount(<HelloWorld msg={msg} />)
+  cy.mount(<HelloWorld msg={msg} />)
   cy.get(textSelector).should('contain.text', msg)
 })

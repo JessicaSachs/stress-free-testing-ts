@@ -1,4 +1,3 @@
-import { mount } from '@cypress/vue'
 import Stepper from './Stepper.vue'
 
 const textSelector = '[data-testid=counter]'
@@ -7,7 +6,7 @@ const decrementSelector = '[data-testid=decrement]'
 
 describe('<Stepper />', () => {
   it('renders', () => {
-    mount(Stepper)
+    cy.mount(Stepper)
     cy.get(textSelector).should('contain.text', '0')
     cy.get(incrementSelector).click()
     cy.get(textSelector).should('contain.text', '1')
