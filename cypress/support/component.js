@@ -1,3 +1,17 @@
+// ***********************************************************
+// This example support/component.js is processed and
+// loaded automatically before your test files.
+//
+// This is a great place to put global configuration and
+// behavior that modifies Cypress.
+//
+// You can change the location of this file or turn off
+// automatically serving support files with the
+// 'supportFile' configuration option.
+//
+// You can read more here:
+// https://on.cypress.io/configuration
+// ***********************************************************
 // Cypress Testing Library - https://testing-library.com/docs/cypress-testing-library/intro/
 import '@testing-library/cypress/add-commands'
 
@@ -12,8 +26,9 @@ import 'virtual:windi-devtools'
 // 2. Import main.scss here.
 import '../../src/main.scss'
 
+
 // 3. Import the real mount function and wrap it.
-import { mount as realMount } from '@cypress/vue'
+import { mount as realMount } from 'cypress/vue'
 
 // 4. Import any global plugins like Vue Router or Pinia or Vuex
 import { createRouter } from '../../src/router'
@@ -26,3 +41,7 @@ Cypress.Commands.add('mount', (component, options = {}) => {
   options.global.plugins = [createRouter(), createPinia()]
   return realMount(component, options)
 })
+
+
+// Example use:
+// cy.mount(MyComponent)
