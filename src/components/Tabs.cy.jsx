@@ -1,6 +1,5 @@
 import Tabs from './Tabs.vue'
-import { mount } from '@cypress/vue'
-import faker from 'faker'
+import {faker} from '@faker-js/faker'
 
 const items = [
   {
@@ -18,10 +17,21 @@ const items = [
 ]
 
 describe('<Tabs />', () => {
+  it.only('renders the items using object syntax', () => {
+    cy.viewport(400, 200)
+    const onSelectSpy = cy.spy().as('selectSpy')
+    cy.mount(Tabs, {
+      props: {
+        onSelect: onSelectSpy,
+        items
+      }
+    })
+  })
+
   it('renders the items', () => {
     cy.viewport(400, 200)
     const onSelectSpy = cy.spy().as('selectSpy')
-    mount(() => (
+    cy.mount(() => (
       <div class="m-8">
         <Tabs onSelect={onSelectSpy} items={items} />
       </div>

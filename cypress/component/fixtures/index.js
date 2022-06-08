@@ -1,4 +1,4 @@
-import faker from 'faker'
+import {faker} from '@faker-js/faker'
 
 export const products = Array.from(Array(120).keys()).map(() => {
   const productName = faker.commerce.productName()
