@@ -1,6 +1,6 @@
 import Card from './Card.vue'
 import CoffeeIcon from '~icons/mdi/coffee'
-import faker from 'faker'
+import {faker} from '@faker-js/faker'
 
 describe('<Card/>', () => {
   it('renders the default slot', () => {

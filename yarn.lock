@@ -889,6 +889,11 @@
     jiti "^1.13.0"
     windicss "^3.5.1"
 
+"@windicss/plugin-interaction-variants@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-interaction-variants/-/plugin-interaction-variants-1.0.0.tgz#11e412c6fd653899f6cced4e4f7b402eb5456981"
+  integrity sha512-jk0kvJEwphPlzjgCASxi0yCrLIrMPBHKTjPB1vF2LZsmWVaIPhKQRfpJW6+G093ipDos1E2BkevDrh/R2Ln8gg==
+
 "@windicss/plugin-utils@1.8.4":
   version "1.8.4"
   resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.8.4.tgz#fba74b6eb29276e24b9d09931bc22808fd7230d7"
