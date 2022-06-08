@@ -3146,7 +3146,7 @@ vue-router@4.0.15:
   dependencies:
     "@vue/devtools-api" "^6.0.0"
 
-vue-star-rating@^2.1.0:
+vue-star-rating@next:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-star-rating/-/vue-star-rating-2.1.0.tgz#303df0231b5d04d271977c44a0967d4768b44e75"
   integrity sha512-LnhuQPi4hkRg7egKls+iqtL1U0RTN2gQkdLsJN7acyynMsSc9epHLzk8McJS+bR0OzfG98zNFq7mxAyuSb/okQ==
