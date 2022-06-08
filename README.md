@@ -1,9 +1,8 @@
 <h1 align="center">Stress-free Testing with Vue 3, Cypress, and Vite</h1>
 
-<p align="center">A pre-conference workshop for Vue Toronto 2021</p>
+<p align="center">A pre-conference workshop for VueConf US 2022</p>
 
-**🔗 Quick Links:** [Vue Test Utils API for Vue 3][vtu docs], [Lachlan Miller's Vue Testing Handbook][lachlans handbook], [Interacting with Elements using Cy Commands][cypress events], [Cypress API][cypress api], [Chai Matchers][cypress chai matchers]
-
+**🔗 Quick Links:** [Official Cypress Docs][cypress ct docs], [Vue Test Utils API for Vue 3][vtu docs], [Lachlan Miller's Vue Testing Handbook][lachlans handbook], [Interacting with Elements using Cy Commands][cypress events], [Cypress API][cypress api], [Chai Matchers][cypress chai matchers]
 
 ## Get Ready for the Day
 
@@ -13,6 +12,10 @@ Good morning! Either before or at the beginning of the workshop, make sure to se
 2. Clone either the [Stress Free Testing][javascript repo].
     ```sh
     gh repo clone JessicaSachs/stress-free-testing # Github CLI
+    ```
+3. Or the [Stress Free Testing TypeScript Repo][typescript repo]
+    ```sh
+    gh repo clone JessicaSachs/stress-free-testing-ts
     ```
 
 3. Run `yarn install`.
@@ -67,10 +70,12 @@ Please use VSCode with Recommended Extensions for the best Developer Experience.
 - Antfu's Iconify Visualizer to preview icons in your templates and script tags.
 - ESLint with Prettier for formatting.
 
+[cypress ct docs]: https://on.cypress.io/component
 [windi css]: https://windicss.org
 [miro app downloads]: https://miro.com/apps/
 [figma app downloads]: https://www.figma.com/downloads/
 [javascript repo]: https://github.com/JessicaSachs/stress-free-testing
+[typescript repo]: https://github.com/JessicaSachs/stress-free-testing-ts
 [nvm install]: https://github.com/nvm-sh/nvm#installing-and-updating
 [yarn install]: https://yarnpkg.com/
 [cypress chai matchers]: https://docs.cypress.io/guides/references/assertions#Chai
@@ -78,7 +83,7 @@ Please use VSCode with Recommended Extensions for the best Developer Experience.
 [lachlans handbook]: https://lmiller1990.github.io/vue-testing-handbook/
 [pinia]: https://pinia.esm.dev/
 [vue router v4]: https://next.router.vuejs.org/
-[faker docs]: https://fakerjsdocs.netlify.app/
+[faker docs]: https://fakerjs.dev/
 [cypress api]: https://docs.cypress.io/api/table-of-contents
 [vtu docs]: https://next.vue-test-utils.vuejs.org/api/
 [script setup]: https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
