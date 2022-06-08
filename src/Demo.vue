@@ -7,7 +7,7 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <div>
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Hello Vue Toronto!" />
+    <HelloWorld msg="Hello VueConf US 2022!" />
   </div>
 </template>
 
